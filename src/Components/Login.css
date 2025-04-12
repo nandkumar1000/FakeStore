@@ -1,0 +1,138 @@
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #dbeafe, #e0f2fe);
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.login-container {
+  display: flex;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.login-form {
+  flex: 1;
+  padding: 2rem;
+  min-width: 300px;
+}
+
+.login-form h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.subheading {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  background: #f1f5f9;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+}
+
+.form-group input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #2575fc;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #1a5cd8;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.signup-link {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.signup-link a {
+  color: #2575fc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Side content */
+.login-side-content {
+  flex: 1;
+  background-color: #f5f8ff;
+  padding: 2rem;
+  min-width: 250px;
+}
+
+.login-side-content h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.login-side-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.login-side-content li {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.7rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .login-side-content {
+    order: -1;
+    text-align: center;
+  }
+
+  .login-side-content ul {
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,109 @@
+.blog-container {
+  font-family: "Segoe UI", sans-serif;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  color: #333;
+}
+
+.blog-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.blog-header h1 {
+  font-size: 2.8rem;
+  color: #2575fc;
+}
+
+.blog-header p {
+  color: #666;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2rem;
+}
+
+.blog-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.blog-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blog-content h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.blog-meta {
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 1rem;
+}
+
+.blog-content p {
+  color: #555;
+  font-size: 1rem;
+  flex-grow: 1;
+  margin-bottom: 1.2rem;
+}
+
+.read-more {
+  background-color: #2575fc;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.read-more:hover {
+  background-color: #0057d9;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .blog-header h1 {
+    font-size: 2rem;
+  }
+
+  .blog-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .read-more {
+    font-size: 0.9rem;
+  }
+}

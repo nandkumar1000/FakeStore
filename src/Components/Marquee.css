@@ -1,0 +1,62 @@
+/* Container for the marquee */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #f8f8f8;
+
+  padding: 10px 0;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Content inside the marquee */
+.marquee-content {
+  display: flex;
+  animation: marquee-animation 20s linear infinite;
+}
+
+/* Each item inside the marquee */
+.marquee-item {
+  margin-right: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Icon styling */
+.marquee-item svg {
+  font-size: 1.5rem;
+  color: #ff6347;
+  /* Red-orange color for icons */
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  .marquee-item {
+    font-size: 1rem;
+
+  }
+}
+
+@media (max-width: 480px) {
+  .marquee-item {
+    font-size: 0.9rem;
+  }
+}
+
+/* Infinite scrolling animation */
+@keyframes marquee-animation {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

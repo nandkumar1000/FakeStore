@@ -1,0 +1,97 @@
+/* Container for the stats section */
+.fakstat-container {
+  background-color: #f4f7f6;
+  padding: 50px 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Heading and subheading */
+.fakstat-heading h2 {
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.fakstat-heading p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Stats container */
+.fakstat-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Stat item style */
+.stat-item {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 25px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 220px;
+  min-width: 180px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Stat number (large font size) */
+.stat-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #0077ff;
+  margin-bottom: 10px;
+}
+
+/* Stat label (small font size) */
+.stat-label {
+  font-size: 1.1rem;
+  color: #777;
+}
+
+/* Hover effect for stat items */
+.stat-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .fakstat-stats {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .stat-item {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+
+  .stat-label {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stat-item {
+    padding: 20px;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-label {
+    font-size: 0.9rem;
+  }
+}

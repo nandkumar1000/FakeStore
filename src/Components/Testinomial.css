@@ -1,0 +1,108 @@
+/* Container for the testimonial section */
+.testimonial-container {
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.testimonial-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Individual testimonial item */
+.testimonial-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  text-align: center;
+}
+
+/* Testimonial image */
+.testimonial-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* Name of the celebrity */
+.testimonial-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Role of the celebrity (e.g., Actor, Producer) */
+.testimonial-role {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Testimonial quote */
+.testimonial-quote {
+  font-size: 1.1rem;
+  color: #444;
+  font-style: italic;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Styling for the icon in the quote */
+.testimonial-icon {
+  color: gold;
+  font-size: 1.2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .testimonial-heading {
+    font-size: 2rem;
+  }
+
+  .testimonial-item {
+    padding: 15px;
+  }
+
+  .testimonial-name {
+    font-size: 1.3rem;
+  }
+
+  .testimonial-role {
+    font-size: 1rem;
+  }
+
+  .testimonial-quote {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-name {
+    font-size: 1.1rem;
+  }
+
+  .testimonial-role {
+    font-size: 0.9rem;
+  }
+
+  .testimonial-quote {
+    font-size: 0.9rem;
+  }
+}
